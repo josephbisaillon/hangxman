@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangxmen</title>
+    
+    <!-- load foundation css lib and google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <!-- load custom css styles -->
+    <link href="./css/app.css" rel="stylesheet">
+    
+    <!-- load angular framework -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    
+    <!-- load application scripts -->
+    <script src="./js/app.js"></script>
+    <script src="./js/controllers/game.js"></script>
+    <script src="./js/services/engine.js"></script>
+  </head>
+    
+  <body ng-app="hangxmen">
+    <ng-include src="'templates/game.html'"></ng-include>
+  </body>
+</html>

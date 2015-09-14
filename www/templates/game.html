@@ -1,0 +1,58 @@
+  
+  <div ng-controller="game-controller"> 
+    <div class="row">
+      <div id="guillotine" class="small-6 columns">
+        <img id="group" src="img/group.png" ng-hide="gameInitialized" />
+        <img ng-src="img/{{bodyParts[currentGame.failedGuessCount]}}.png" />
+      </div>
+  
+      <div id="board" class="small-6 columns"> 
+        <div id="introduction" ng-hide="gameInitialized">
+          <h1>HangXmen</h1>
+          <h1 class="subheader">It's up to you to save Wolverine.</h1>
+          <button class="small radius" type="button" ng-click="startNewGame(); gameInitialized = true;">Start Game</button>
+        </div>
+                 
+        <div id="scoreboard" ng-show="gameInitialized">
+          <h2>Scoreboard:</h2>
+          <h3 class="subheader inline" ng-show="!totalScore">No scores yet.</h3>
+          <h3 class="subheader inline" ng-show="totalScore">Player Wins: <span class="victory">{{totalScore.playerWins}}</span></h3>
+          <h3 class="subheader inline" ng-show="totalScore">Computer Wins: <span class="defeat">{{totalScore.computerWins}}</span></h3>
+        </div>
+        
+        <div id="gameboard" ng-show="activeGame">
+          <h2>Mystery Mutant:</h2>
+          <h3 class="subheader inline" ng-if="activeGame && currentGame.failedGuessCount > 4">Hint: {{currentGame.character.hint}}</h3>
+            
+          <ul class="inline-list">
+            <li ng-repeat="letter in currentGame.character.letters track by $index">
+              <span ng-show="currentGame.matchedLetters.indexOf($index) == -1">_</span>
+              <span ng-show="currentGame.matchedLetters.indexOf($index) != -1">{{letter}}</span>
+            </li>
+          </ul>
+  
+          <form ng-submit="checkCurrentGuess()" ng-show="activeGame">
+            <div class="row collapse">
+              <div class="small-3 large-2 columns">
+                <span class="prefix">Your guess:</span>
+              </div>
+              
+              <div class="small-9 large-10 columns">
+                <input type="text" maxlength="1" ng-model="currentGuess" />
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div id="results" ng-hide="!gameInitialized || activeGame">
+          <h2>Results: </h2>
+          <h3 class="victory" ng-show="currentGame.victory">You win!</h3>
+          <h3 class="defeat" ng-hide="currentGame.victory">You lose!</h3>
+          <h3 class="subheader inline">Answer: {{currentGame.character.codeName}}</h3>
+          <h3 class="subheader inline">Info: <a href="{{currentGame.character.info}}" target="new">Marvel Database</a></h3>
+          <button class="small radius" type="button" ng-click="startNewGame();">Next Round</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

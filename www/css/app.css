@@ -1,0 +1,91 @@
+  
+  /* elements */
+  
+  body {
+    background-color: #dadada;
+  }
+  
+  h1, h2, h3, h4, div, span, p, a, input, button {
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 37px;
+  }
+
+  h1.subheader {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 15px;
+  }
+
+  h2.subheader.inline {
+    display: inline-block;
+  }
+  
+  h3 {
+    font-size: 22px;
+    line-height: 17px !important;
+  }
+  
+  button.small {
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .victory {
+    color: green !important;
+  }
+  
+  .defeat {
+    color: red !important;
+  }
+  
+  
+  /* introduction */
+  
+  #introduction {
+    margin-top: 40px;
+  }
+  
+  img#group {
+    margin-top: 15px;
+  }
+  
+  
+  /* score, gameplay, and results */
+
+  #scoreboard, 
+  #gameboard,
+  #results {
+    margin-top: 40px;
+  }
+  
+  ul.inline-list {
+    margin-top: 20px;
+  }
+
+  ul.inline-list li {
+    font-size: 24px;
+  }
+
+  ul.inline-list li:first-child {
+    margin-left: 0px;
+  }
+  
+  input[type="text"] {
+    width: 40px;
+    font-size: 18px;
+  }
+  
+  span.prefix {
+    font-size: 15px;
+  }
+  

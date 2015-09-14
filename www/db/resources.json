@@ -1,0 +1,64 @@
+[
+  {
+    "bodyParts": [
+      "noose",
+      "head",
+      "torso",
+      "left-arm",
+      "right-arm",
+      "claws",
+      "waist",
+      "left-leg",
+      "right-leg",
+      "left-foot",
+      "right-foot"
+    ],
+    "xmen": [
+      {
+        "codeName": "psylocke",
+        "hint": "This mutant creates psionic blades.", 
+        "info": "http://marvel.wikia.com/wiki/Psylocke"
+      },
+      {
+        "codeName": "banshee",
+        "hint": "This mutant can use his voice to fly.",
+        "info": "http://marvel.wikia.com/wiki/Banshee"
+      },      
+      {
+        "codeName": "magneto",
+        "hint": "This mutant has complete control over the electromagnetic spectrum.",
+        "info": "http://marvel.wikia.com/wiki/Magneto"
+      },      
+      {
+        "codeName": "archangel",
+        "hint": "This mutant has wings.",
+        "info": "http://marvel.wikia.com/wiki/Archangel"
+      },      
+      {
+        "codeName": "colossus",
+        "hint": "This mutant can turn his skin into steel.",
+        "info": "http://marvel.wikia.com/wiki/Colossus"
+      },      
+      {
+        "codeName": "storm",
+        "hint": "This mutant can control the weather.",
+        "info": "http://marvel.wikia.com/wiki/Storm"
+      },     
+      {
+        "codeName": "xavier",
+        "hint": "This mutant is the world's most powerful telepath.",
+        "info": "http://marvel.wikia.com/wiki/Xavier"
+      },      
+      {
+        "codeName": "cyclops",
+        "hint": "This mutant can create optic blasts.",
+        "info": "http://marvel.wikia.com/wiki/Cyclops"
+      },      
+      {
+        "codeName": "iceman",
+        "hint": "This mutant can lower his body temperature to freezing.",
+        "info": "http://marvel.wikia.com/wiki/Iceman"
+      }
+    ]
+  }
+]
