@@ -1,5 +1,5 @@
 
-  angular.module('hangxmen')
+  angular.module('hangxman')
 
   .factory('engine', function($http, $filter) {
     

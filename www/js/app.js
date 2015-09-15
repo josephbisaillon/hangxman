@@ -1,6 +1,6 @@
           
   // angular module registration
-  angular.module('hangxmen', [])
+  angular.module('hangxman', [])
 	
   // retrieve initial dependencies on application run
   .run(function(engine) {

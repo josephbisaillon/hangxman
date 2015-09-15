@@ -1,4 +1,4 @@
-Hangxmen
+Hangxman
 ========
 
 Here is my glorious X-men themed twist on the traditional Hangman. Some considerations:

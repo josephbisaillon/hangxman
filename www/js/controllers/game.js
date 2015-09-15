@@ -1,5 +1,5 @@
 
-  angular.module('hangxmen')
+  angular.module('hangxman')
   
   .controller('game-controller', function($scope, engine) {
     
